@@ -1,0 +1,143 @@
+.container {
+  background-color: #909090;
+  z-index: 1;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+.card {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+.main_card {
+  display: flex;
+}
+.sop_text {
+  margin-top: 8rem;
+  padding-left: 3rem;
+  padding-right: 2rem;
+}
+.left_card {
+  margin-top: 8rem;
+  padding-left: 1rem;
+  text-align: justify;
+  padding-right: 3rem;
+}
+.right_card {
+  height: 100vh;
+  width: 60%;
+  position: relative;
+}
+.right_card_image {
+  position: absolute;
+  z-index: 1;
+  bottom: -2.5rem;
+  right: 8rem;
+}
+.left_header1 {
+  padding-bottom: 1.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  text-align: justify;
+  font-weight: 0.5rem;
+}
+.left_header2 {
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  text-align: justify;
+  font-weight: 1.5rem;
+  font-size: 1.5rem;
+}
+.left_header3 {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  text-align: justify;
+  font-weight: 0.5rem;
+}
+.left_button {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  text-align: left;
+  margin-top: 2rem;
+  width: 350px;
+  margin-left: 1rem;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  background-color: #585858;
+  color: black;
+  border: none;
+  margin-right: 1rem;
+  font-weight: normal;
+}
+.left_button {
+  transition-duration: 0.4s;
+}
+
+.left_button:hover {
+  background-color: black; /* Green */
+  color: white;
+}
+.arrow {
+  float: right;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 760px) {
+  .container {
+    background-color: #909090;
+    z-index: 1;
+  }
+  .card {
+    display: flex;
+    height: 150vh;
+    width: 100%;
+    position: relative;
+  }
+  .main_card {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sop_text {
+    position: absolute;
+    top: -5.25rem;
+    left: -1rem;
+  }
+  .right_card {
+    height: 100vh;
+    width: 100%;
+    margin-top: -5rem;
+    position: relative;
+  }
+
+  .right_card_image {
+    position: absolute;
+    z-index: 1;
+    bottom: -2.5rem;
+    right: 15rem;
+  }
+  .left_card {
+    margin-top: -0.1rem;
+    padding-top: 3rem;
+    text-align: justify;
+    padding-right: 3rem;
+    margin-bottom: 2rem;
+  }
+  .left_header1 {
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    text-align: justify;
+  }
+  .left_header2 {
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    text-align: justify;
+  }
+  .left_header3 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    text-align: justify;
+  }
+}
